@@ -2,13 +2,17 @@ import re
 import sys
 dic={}
 
-if not (sys.argv):
+if (len(sys.argv)==1):
   string1= input('Digite la primera palabra:')
   string2 = input('Digite la segunda palabra:')
 
-if(sys.argv):
+if(len(sys.argv)==2):
   string1 = sys.argv[1]
-  string2 = sys.argv[2]
+  string2= ''
+else:
+  if (len(sys.argv)==3):
+    string1 = sys.argv[1]
+    string2 = sys.argv[2]
 
 
 with open('romeo.txt') as file:
