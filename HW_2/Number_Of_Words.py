@@ -3,8 +3,8 @@ import sys
 dic={}
 
 if (len(sys.argv)==1):
-  string1= input('Digite la primera palabra:')
-  string2 = input('Digite la segunda palabra:')
+  string1= input('Type the first word to search:')
+  string2 = input('Type the second word to search:')
 
 if(len(sys.argv)==2):
   string1 = sys.argv[1]
@@ -25,6 +25,6 @@ with open('romeo.txt') as file:
 
 print(dic)
 if not (dic.get(string1)):
-    print('Palabra 1 no encontrada')
+    print('First word not found')
 if not(dic.get(string2)):
-    print('Palabra 2 no encontrada')
+    print('Second word not found')

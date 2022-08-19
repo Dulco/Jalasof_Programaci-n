@@ -14,4 +14,4 @@ for key, value in dic.items():
   if (value>aux):
     key_repeated=key
     aux=value
-print('La palabra que más se repite es "', key_repeated , '" y se repite:', dic.get(key_repeated), 'veces.')
+print('The most repeated word is: "', key_repeated , '" its', dic.get(key_repeated), 'times.')
